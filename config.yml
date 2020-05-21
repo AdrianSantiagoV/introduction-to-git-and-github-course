@@ -1,0 +1,18 @@
+title: Introduction to Git and GitHub
+description: >-
+  A brief demonstration on how Git and Github work based on a youtube series
+  from the codex
+template:
+  repo: introduction-to-git-and-github-template
+  name: introduction-to-git-and-github
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
